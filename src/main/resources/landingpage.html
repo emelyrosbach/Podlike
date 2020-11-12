@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <title>Podlike</title>
+    <style>
+        .podcast {
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+        }
+    </style>
 </head>
 <body>
-
+<!--<h1 th:utext="${title}" />
+<a th:href="@{/contacts}">Contact List</a>-->
+<div></div>
+<h3>Listen to our great selection of podcasts</h3>
+<div>
+    <div class="podcast"></div>
+    <h3>Title</h3>
+    <p>description</p>
+</div>
 </body>
 </html>
