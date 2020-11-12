@@ -3,25 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        fieldset {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
     <div th:replace="fragments.html :: head">  </div>
 
-    <form action="#"  method="post">
-        <fieldset>
-            <label> E-Mail: </label>
-            <input type="text" name="email">
-        </fieldset>
-        <fieldset>
-            <label> Passwort: </label>
-            <input type="text" name="password">
-        </fieldset>
-        <fieldset>
-            <label> Passwort wiederholen: </label>
-            <input type="text" name="repeat_password">
-        </fieldset>
-        <input type="submit" value="Sign Up">
-    </form>
+    <div class="content">
+        <form action="#"  method="post">
+            <fieldset>
+                <label> E-Mail: </label>
+                <input type="text" name="email">
+            </fieldset>
+            <fieldset>
+                <label> Passwort: </label>
+                <input type="text" name="password">
+            </fieldset>
+            <fieldset>
+                <label> Passwort wiederholen: </label>
+                <input type="text" name="repeat_password">
+            </fieldset>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
 
 </body>
 
