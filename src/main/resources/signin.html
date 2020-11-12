@@ -25,7 +25,7 @@
             height: 100%;
             padding: 20px;
             background: white;
-            boarder-radius: 4px;
+            border-radius: 4px;
             box-shadow: 0 8px 16px rgba(0,0,0,.3)
         }
         .signinform form h1{
@@ -49,7 +49,7 @@
             height: 34px;
             border: none;
             outline: none;
-            backround: #27a327;
+            background-color: #27a327;
             cursor: pointer;
             font-size: 16px;
             text-transform: uppercase;
@@ -59,27 +59,29 @@
         }
         .signinform form .btn:hover{
             opacity: 7;
+
         }
     </style>
 </head>
 
-<body>
 <div th:replace="fragments.html :: head">  </div>
-    <form action="">
+<form action="">
 
-<div class="signinform"> </div>
-    <form action="" method="post">>
+    <div class="signinform">
+        <form action="" method="post">
 
-        <h1>Login Page</h1>
-        <fieldset>
-            <label>E-Mail:</label>
-            <input type="text" class="form-control" required>
-        </fieldset>
-        <fieldset>
-            <label>Passwort:</label>
-            <input type="text" class="form-control" required>
-        </fieldset>
-        <input type="submit" class="btn" value="SignIn">
-    </form>
+            <h1>Login Page</h1>
+            <fieldset>
+                <label>E-Mail:</label>
+                <input type="text" class="form-control" required>
+            </fieldset>
+            <fieldset>
+                <label>Passwort:</label>
+                <input type="text" class="form-control" required>
+            </fieldset>
+            <input type="submit" class="btn" value="SignIn">
+        </form>
+    </div>
+</form>
 </body>
 </html>
