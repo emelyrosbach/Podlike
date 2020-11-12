@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" xmlns_th="http://www.thymeleaf.org">
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
@@ -64,7 +64,7 @@
 </head>
 
 <body>
-<div class="signinform"> PODLIKE </div>
+<div th:replace="fragments.html :: head">  </div>
     <form action="">
         <h1>Login Page</h1>
         <fieldset>
@@ -77,6 +77,5 @@
         </fieldset>
         <input type="submit" class="btn" value="SignIn">
     </form>
-</div>
 </body>
 </html>
