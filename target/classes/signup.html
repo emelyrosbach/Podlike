@@ -21,7 +21,7 @@
 <body>
     <div th:replace="fragments.html :: head">  </div>
 
-    <div class="content">
+
         <form action="#"  method="post">
             <fieldset>
                 <label> E-Mail: </label>
@@ -37,6 +37,9 @@
             </fieldset>
             <input type="submit" value="Sign Up">
         </form>
+        <p>Sie haben bereits einen Account?
+            <a th:href="@{/signin}">Hier</a> anmelden!
+        </p>
     </div>
 
 
