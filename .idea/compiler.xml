@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hellojavalin" />
-        <module name="Podlike" />
         <module name="Podlike_" />
+        <module name="Podlike" />
       </profile>
     </annotationProcessing>
   </component>
