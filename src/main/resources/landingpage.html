@@ -13,13 +13,15 @@
 </head>
 <body>
 <div th:replace="fragments.html :: head"></div>
+<div class="podcasts">
 <h3>Listen to our great selection of podcasts</h3>
-<div>
-  <a th:href="@{/podcast}">
+<div th:each = "podcast : ${podcasts}">
+  <a th:href="@{/podcast/{id}(id=${podcast.podcast_id})}">
     <div class="podcast"></div>
   </a>
-  <h3>Title</h3>
+  <h3 th:text= "${podcast.title}">Title</h3>
   <p>description</p>
+</div>
 </div>
 </body>
 </html>
